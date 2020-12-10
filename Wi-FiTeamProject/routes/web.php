@@ -13,10 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/test', function () {
-    return view('welcome');
-});
-
 Route::get('/sample', function () {
     return view('sample');
 });
+
+Route::get('/sample/download', function () {
+    return view('download');
+});
+
+Route::get('/sample/statget', 'App\Http\Controllers\SampleController@statget');
+Route::post('/sample/place', 'App\Http\Controllers\SampleController@place');
+Route::get('/sample/download/windows', 'App\Http\Controllers\SampleController@download');

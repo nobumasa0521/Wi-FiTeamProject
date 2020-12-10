@@ -7,9 +7,10 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-//import Vuetify from 'vuetify';
-//import 'vuetify/dist/vuetify.min.css';
-//Vue.use(Veutify);
+
+//vuetify
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,7 +23,13 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('target-component', require('./components/TargetComponent.vue').default);
+Vue.component('client-select-component', require('./components/ClientSelectComponent.vue').default);
+Vue.component('top-bar-component', require('./components/TopBarComponent.vue').default);
+Vue.component('main-component', require('./components/MainComponent.vue').default);
+Vue.component('route-component', require('./components/RouteComponent.vue').default);
+Vue.component('downloadroute-component', require('./components/DownloadRouteComponent.vue').default);
+Vue.component('download-component', require('./components/DownloadComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -32,5 +39,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
-    //vuetify: new Vuetify(),
+    vuetify: new Vuetify({
+        iconfont: 'mdi', //追記
+    })
 });
