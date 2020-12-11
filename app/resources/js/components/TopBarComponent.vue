@@ -52,7 +52,7 @@
             <v-btn
             text
             icon
-            nuxt href="/sample/download"
+            nuxt href="/download"
             >
               <v-icon left>
                 mdi-download
@@ -80,8 +80,8 @@
       drawer: false,
       group: null,
       menus: [
-        { title: 'ホーム', icon: 'mdi-home', url: '/sample' },
-        { title: 'ダウンロード', icon: 'mdi-download', url: '/sample/download' },
+        { title: 'ホーム', icon: 'mdi-home', url: '/' },
+        { title: 'ダウンロード', icon: 'mdi-download', url: '/download' },
       ]
     }),
     watch: {

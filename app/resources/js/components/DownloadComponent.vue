@@ -31,7 +31,7 @@
                     :disabled="loading"
                     color="secondary"
                     @click="loader = 'loading'"
-                    nuxt href="/sample/download/windows">
+                    nuxt href="/download/windows">
                         ダウンロード
                     </v-btn>
                     </v-card-actions>
@@ -59,7 +59,7 @@ export default {
     },
     methods:{
         WindowsDownload:function(){
-            axios.get('http://127.0.0.1:8000/sample/download/windows')
+            axios.get('http://192.168.10.163/download/windows')
                 .then(response => {
                     if (response.status === 200 && response.data.status === 'ok') {
                         commit("download success")

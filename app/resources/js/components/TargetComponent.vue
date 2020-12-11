@@ -114,7 +114,7 @@ export default {
       console.log("changecolor");
       count++;
   
-      axios.get('http://127.0.0.1:8000/sample/statget')
+      axios.get('http://192.168.10.163/sample/statget')
         .then(function (response) {
           // handle success
           // レスポンスのデータをstatdataに退避
@@ -191,16 +191,16 @@ export default {
     stroke: #83aefd;
   }
   .empty{
-    fill: #f3fcff;
+    fill: rgb(255, 245, 245)
   }
   .some{
-    fill: rgb(255, 232, 155)
+    fill: rgb(255, 176, 176)
   }
   .many{
-    fill: rgb(255, 128, 78)
+    fill: rgb(255, 104, 104)
   }
   .full{
-    fill: rgb(252, 48, 48)
+    fill: rgb(255, 50, 50)
   }
 
   svg{
