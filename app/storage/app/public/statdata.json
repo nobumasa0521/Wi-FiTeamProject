@@ -1,0 +1,20 @@
+{
+    "roomstat": {
+        "env2ndroom": "some",
+        "faroom": "full"
+    },
+    "roomnumber": {
+        "env2ndroom": 1,
+        "faroom": 3
+    },
+    "clientstat": {
+        "COMPB13": "faroom",
+        "COMPB16": "faroom",
+        "COMPB17": "env2ndroom",
+        "COMPB20": "faroom"
+    },
+    "ssidstat": {
+        "sample1": "env2ndroom",
+        "sample2": "faroom"
+    }
+}
