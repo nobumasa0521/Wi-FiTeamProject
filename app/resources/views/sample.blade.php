@@ -15,7 +15,11 @@
 </head>
 <body>
     <div id="app"> 
-        <route-component></route-component>
+    <div id="nav">
+          <router-link to="/">Home</router-link>
+        </div>
+        <router-view/>
+        <!-- <route-component></route-component> -->
     </div>
     <script src=" {{ mix('js/app.js') }} "></script>
 </body>

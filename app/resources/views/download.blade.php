@@ -17,6 +17,6 @@
     <div id="app"> 
         <downloadroute-component></route-component>
     </div>
-    <script src=" {{ mix('js/app.js') }} "></script>
+    <script src=" {{ ('js/app.js') }} "></script>
   </body>
 </html>

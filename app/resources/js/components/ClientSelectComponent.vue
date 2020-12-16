@@ -19,7 +19,7 @@
         elevation="1"
       >
         <v-banner 
-          color="blue accent-2 white--text text--accent-4">
+          color="light-blue accent-3 white--text text--accent-4">
             クライアントを選択
         </v-banner>
         <v-list shaped>
@@ -38,7 +38,7 @@
                 v-else
                 :key="`item-${D}`"
                 :value="Device"
-                active-class="blue--text text--accent-4"
+                active-class="light-blue--text text--accent-4"
               >
               <template v-slot:default="{ active }">
                 <v-icon left>
@@ -50,7 +50,7 @@
                 <v-list-item-action>
                   <v-checkbox
                     :input-value="active"
-                    color="blue accent-1"
+                    color="light-blue accent-1"
                   >
                   </v-checkbox>
                 </v-list-item-action>

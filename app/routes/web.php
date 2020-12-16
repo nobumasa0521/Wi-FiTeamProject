@@ -13,19 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('sample');
-});
+    // Route::get('/{any}', function () {
+    //     return view('sample');
+    // })->where('any', '.*');
 
-//view
-Route::get('/sample', function () {
-    return view('sample');
-});
-Route::get('/download', function () {
-    return view('download');
-});
+    Route::get('/', function () {
+        return view('sample');
+    });
 
-//api
-Route::get('/sample/statget', 'App\Http\Controllers\SampleController@statget');
-Route::post('/sample/place', 'App\Http\Controllers\SampleController@place');
-Route::get('/download/windows', 'App\Http\Controllers\SampleController@download');
+    // view
+    Route::get('/sample', function () {
+        return view('sample');
+    });
+    Route::get('/download', function () {
+        return view('download');
+    });
+
+    //api
+    Route::get('/sample/statget', 'App\Http\Controllers\SampleController@statget');
+    Route::post('/sample/place', 'App\Http\Controllers\SampleController@place');
+    Route::get('/download/windows', 'App\Http\Controllers\SampleController@download');

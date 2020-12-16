@@ -6,11 +6,21 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
-
 //vuetify
 import Vuetify from 'vuetify';
 Vue.use(Vuetify);
+
+import Vue from 'vue'
+import VueRouter from 'vue-router';
+
+window.Vue = Vue;
+Vue.use(VueRouter);
+
+import router from './router' // 追加 1.
+// import App from './App.vue' // 追加 2.
+
+
+axios.defaults.withCredentials = true; 
 
 /**
  * The following block of code may be used to automatically register your
@@ -32,6 +42,7 @@ Vue.component('route-component', require('./components/RouteComponent.vue').defa
 Vue.component('downloadroute-component', require('./components/DownloadRouteComponent.vue').default);
 Vue.component('download-component', require('./components/DownloadComponent.vue').default);
 
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -40,6 +51,9 @@ Vue.component('download-component', require('./components/DownloadComponent.vue'
 
 const app = new Vue({
     el: '#app',
+    router,
+    // component: {App},
+    // template: '<App />',
     vuetify: new Vuetify({
         iconfont: 'mdi', //追記
     })

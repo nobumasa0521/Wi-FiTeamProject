@@ -59,7 +59,7 @@ export default {
     },
     methods:{
         WindowsDownload:function(){
-            axios.get('http://192.168.10.163/download/windows')
+            axios.get('http://127.0.0.1/download/windows')
                 .then(response => {
                     if (response.status === 200 && response.data.status === 'ok') {
                         commit("download success")

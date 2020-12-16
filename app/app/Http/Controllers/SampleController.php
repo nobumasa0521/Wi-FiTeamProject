@@ -12,6 +12,8 @@ class SampleController extends Controller
         $url = storage_path() . '\app\public\statdata';
         $json = file_get_contents($url);
         $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+        //$ret = json_decode( $json , false );
+        //return $ret;
         return $json;
     }
 
