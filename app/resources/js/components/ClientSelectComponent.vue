@@ -5,7 +5,7 @@
       <v-select 
         v-if="$vuetify.breakpoint.mdOnly || $vuetify.breakpoint.smOnly ||$vuetify.breakpoint.xsOnly"
         class="mx-auto"
-        elevation="1"
+        elevation="0"
         v-model="TargetDevice"
         v-on:change="onSelectDevice"
         :items="DeviceList"
@@ -16,7 +16,7 @@
         v-else
         class="mx-auto"
         max-width="500"
-        elevation="1"
+        elevation="0"
       >
         <v-banner 
           color="light-blue accent-3 white--text text--accent-4">

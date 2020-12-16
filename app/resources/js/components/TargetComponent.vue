@@ -1,12 +1,12 @@
 <template>
   <v-container >
-    <v-sheet rounded="lg" class="spacing-playground pa-6">
+    <!-- <v-sheet rounded="lg" class="spacing-playground pa-6"> -->
     <v-row>
       <v-col cols="auto" xs="12">
       <client-select-component v-on:select-device="onSelectDevice"></client-select-component>
       </v-col>
       <v-col cols="auto">
-        <v-sheet rounded="lg" class="spacing-playground pa-6" elevation="1">
+        <v-sheet rounded="lg" class="spacing-playground pa-6" elevation="0">
           <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="520" height="520" class="preview-svg" id="noneroom"> -->
             <!-- 
               <rect x="0" y="150" width="200" height="200" stroke="#808080" v-bind:class="stateenv2" id="Env2ndroom"/>
@@ -39,13 +39,13 @@
               <path d="M 302.13 55.77 L 421.5 56" fill="none" stroke="#36393d" stroke-miterlimit="10" pointer-events="stroke"/>
               <path d="M 301.5 114.5 L 362 115 L 362 200" fill="none" stroke="#36393d" stroke-miterlimit="10" pointer-events="stroke"/>
               <path d="M 481.02 169.51 L 422 146 L 422 114" fill="none" stroke="#36393d" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 1.5 1.5 L 661 1" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 1.5 1.5 L 1.5 199.5" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 1.5 199.5 L 302 200" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 302 200 L 302 370.5" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 302 370.5 L 422 370.5" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 422 370.5 L 422 200" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
-              <path d="M 422 200 L 661 200 L 661 1" fill="none" stroke="#36393d" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 1.5 1.5 L 661 1" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 1.5 1.5 L 1.5 199.5" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 1.5 199.5 L 302 200" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 302 200 L 302 370.5" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 302 370.5 L 422 370.5" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 422 370.5 L 422 200" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
+              <path d="M 422 200 L 661 200 L 661 1" fill="none" stroke="#36393d" stroke-width="2" stroke-miterlimit="10" pointer-events="stroke"/>
               <ellipse cx="360" cy="29" rx="20" ry="20" fill="#ffffff" stroke="#4d4d4d" pointer-events="all"/>
               <rect x="348.42" y="16.46" width="23.17" height="25.08" fill="none" stroke="none" pointer-events="all"/>
               <path d="M 361.66 16.68 L 361.66 41.03 L 359.71 41.03 L 359.71 16.68 L 361.66 16.68 Z" fill="#4d4d4d" stroke="none" pointer-events="all"/>
@@ -169,7 +169,7 @@
         </v-sheet>
       </v-col>
     </v-row>
-    </v-sheet>
+    <!-- </v-sheet> -->
   </v-container>
 </template>
 
